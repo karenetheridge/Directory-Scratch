@@ -533,7 +533,7 @@ directory and its contents are removed.
     );
 
 If C<DIR>, C<CLEANUP>, or C<TEMPLATE> are omitted, reasonable defaults
-are selected.  C<CLEANUP> is on by default, and C<DIR> is set to C<File::Spec->tmpdir>;
+are selected.  C<CLEANUP> is on by default, and C<DIR> is set to C<< File::Spec->tmpdir >>;
 
 =head2 child
 
