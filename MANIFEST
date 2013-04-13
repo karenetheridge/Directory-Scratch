@@ -2,6 +2,7 @@
 Changes
 examples/basic.pl
 inc/Module/Install.pm
+inc/Module/Install/Authority.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Can.pm
 inc/Module/Install/Fetch.pm
