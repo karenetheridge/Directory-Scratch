@@ -436,7 +436,7 @@ When writing test suites for modules that operate on files, it's often
 inconvenient to correctly create a platform-independent temporary
 storage space, manipulate files inside it, then clean it up when the
 test exits.  The inconvenience usually results in tests that don't work
-everwhere, or worse, no tests at all.
+everywhere, or worse, no tests at all.
 
 This module aims to eliminate that problem by making it easy to do
 things right.
@@ -465,7 +465,7 @@ Example:
 =head1 EXPORT
 
 The first argument to the module is optional, but if specified, it's
-interperted as the name of the OS whose file naming semantics you want
+interpreted as the name of the OS whose file naming semantics you want
 to use with Directory::Scratch.  For example, if you choose "Unix",
 then you can provide paths to Directory::Scratch in UNIX-form
 ('foo/bar/baz') on any platform.  Unix is the default if you don't
@@ -552,7 +552,7 @@ object.
 =head2 platform([$platform])
 
 Returns the name of the platform that the filenames are being
-interperted as (i.e., "Win32" means that this module expects paths
+interpreted as (i.e., "Win32" means that this module expects paths
 like C<\foo\bar>, whereas "UNIX" means it expects C</foo/bar>).
 
 If $platform is sepcified, the platform is changed to the passed
