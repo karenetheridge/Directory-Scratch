@@ -2,6 +2,7 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
         - convert to Dist::Zilla, with more metadata
+        - pod patch (RT#51615)
 
 0.15    13 April 2013
         * Remove test for Classic Mac, fixing RT#83318
