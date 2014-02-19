@@ -19,9 +19,6 @@ use Scalar::Util qw(blessed);
 use overload q{""} => \&base,
   fallback => "yes, fallback";
 
-
-our $VERSION = '0.15';
-
 # allow the user to specify which OS's semantics he wants to use
 # if platform is undef, then we won't do any translation at all
 sub import {
