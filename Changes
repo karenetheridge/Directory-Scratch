@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.15    2014-12-24 23:48:36Z
         - convert to Dist::Zilla, with more metadata
         - pod patch (RT#51615)
         - removed all uses of File::Slurp (RT#92973)
