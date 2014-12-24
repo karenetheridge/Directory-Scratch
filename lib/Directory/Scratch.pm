@@ -425,7 +425,13 @@ __END__
 
 =head1 NAME
 
-Directory::Scratch - Easy-to-use self-cleaning scratch space.
+Directory::Scratch - (DEPRECATED) Easy-to-use self-cleaning scratch space.
+
+=head1 DEPRECATION NOTICE
+
+This module has not been maintained in quite some time, and now there are
+other options available, which are much more actively maintained. Please
+use L<Test::TempDir::Tiny> instead of this module.
 
 =head1 SYNOPSIS
 
