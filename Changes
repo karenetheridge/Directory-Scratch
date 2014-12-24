@@ -3,6 +3,7 @@ Revision history for {{$dist->name}}
 {{$NEXT}}
         - convert to Dist::Zilla, with more metadata
         - pod patch (RT#51615)
+        - removed all uses of File::Slurp (RT#92973)
 
 0.15    2013-04-13 00:00:00Z
         - Remove test for Classic Mac, fixing RT#83318

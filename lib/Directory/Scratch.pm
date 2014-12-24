@@ -8,7 +8,7 @@ use Carp;
 use File::Temp;
 use File::Copy;
 use Path::Class qw(dir file);
-use File::Slurp qw(read_file write_file);
+use Path::Tiny;
 use File::Spec;
 use File::stat (); # no imports
 
@@ -210,12 +210,12 @@ sub read {
     croak "Cannot read $file: is a directory" if -d $file;
     
     if(wantarray){
-	my @lines = read_file($file->stringify);
+	my @lines = path($file->stringify)->lines;
 	chomp @lines;
 	return @lines;
     }
     else {
-	my $scalar = read_file($file->stringify);
+	my $scalar = path($file->stringify)->slurp;
 	chomp $scalar;
 	return $scalar;
     }
@@ -236,12 +236,13 @@ sub write {
 
     my $args;
     if(defined $method && $method eq 'Directory::Scratch::append'){
-	$args->{append} = 1;
-	write_file($path->stringify, $args, map { $_. ($, || "\n") } @_) 
+	local $, = $, || "\n";
+	path($path->stringify)->append(@_, '') 
 	  or croak "Error writing file: $!";
     }
     else { # (cut'n'paste)++
-	write_file($path->stringify, map { $_. ($, || "\n") } @_) 
+	local $, = $, || "\n";
+	path($path->stringify)->spew(@_, '') 
 	  or croak "Error writing file: $!";
     }
     return 1;
@@ -404,10 +405,9 @@ sub randfile {
     
     my ($fh, $name) = $self->tempfile;
     croak "Could not open $name: $!" if !$fh;
-    $name = file($name);
     
     my $rand = String::Random->new();
-    write_file($fh, $rand->randregex(".{$min,$max}"));    
+    path($name)->spew($rand->randregex(".{$min,$max}"));    
     
     return file($name);
 }
