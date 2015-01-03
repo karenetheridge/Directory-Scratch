@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+        - re-release to fix problematic $VERSION declaration (RT#101095)
 
 0.15    2014-12-24 23:48:36Z
         - convert to Dist::Zilla, with more metadata
