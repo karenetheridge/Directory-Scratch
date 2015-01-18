@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.17    2015-01-18 19:31:17Z
         - added x_deprecated metadata
         - work around MSWin32 failures by writing files in place, rather than
           using a temp file and moving them after

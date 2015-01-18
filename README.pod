@@ -2,11 +2,11 @@
 
 =head1 NAME
 
-Directory::Scratch - (DEPRECATED) Easy-to-use self-cleaning scratch space.
+Directory::Scratch - (DEPRECATED) Easy-to-use self-cleaning scratch space
 
 =head1 VERSION
 
-version 0.16
+version 0.17
 
 =head1 DEPRECATION NOTICE
 
