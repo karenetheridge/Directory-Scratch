@@ -2,6 +2,8 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
         - added x_deprecated metadata
+        - work around MSWin32 failures by writing files in place, rather than
+          using a temp file and moving them after
 
 0.16    2015-01-03 20:53:28Z
         - re-release to fix problematic $VERSION declaration (RT#101095)
