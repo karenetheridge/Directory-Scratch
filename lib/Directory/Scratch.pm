@@ -425,7 +425,7 @@ __END__
 
 =head1 NAME
 
-Directory::Scratch - (DEPRECATED) Easy-to-use self-cleaning scratch space.
+Directory::Scratch - (DEPRECATED) Easy-to-use self-cleaning scratch space
 
 =head1 DEPRECATION NOTICE
 
