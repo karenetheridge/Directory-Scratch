@@ -242,7 +242,7 @@ sub write {
     }
     else { # (cut'n'paste)++
 	local $, = $, || "\n";
-	path($path->stringify)->spew(@_, '') 
+	path($path->stringify)->append({ truncate => 1 }, @_, '')
 	  or croak "Error writing file: $!";
     }
     return 1;
@@ -405,9 +405,10 @@ sub randfile {
     
     my ($fh, $name) = $self->tempfile;
     croak "Could not open $name: $!" if !$fh;
+    close $fh;
     
     my $rand = String::Random->new();
-    path($name)->spew($rand->randregex(".{$min,$max}"));    
+    path($name)->append({ truncate => 1 }, $rand->randregex(".{$min,$max}"));
     
     return file($name);
 }
