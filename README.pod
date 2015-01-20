@@ -6,7 +6,7 @@ Directory::Scratch - (DEPRECATED) Easy-to-use self-cleaning scratch space
 
 =head1 VERSION
 
-version 0.17
+version 0.18
 
 =head1 DEPRECATION NOTICE
 
