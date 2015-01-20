@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+        - bump prereq on Path::Tiny to ensure that required interface is
+          available
 
 0.17    2015-01-18 19:31:17Z
         - added x_deprecated metadata

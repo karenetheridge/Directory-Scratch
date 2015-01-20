@@ -8,7 +8,7 @@ use Carp;
 use File::Temp;
 use File::Copy;
 use Path::Class qw(dir file);
-use Path::Tiny;
+use Path::Tiny 0.060;
 use File::Spec;
 use File::stat (); # no imports
 
