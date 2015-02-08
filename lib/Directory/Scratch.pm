@@ -753,6 +753,7 @@ L<http://git.or.cz/>
  L<File::Path>
  L<File::Spec>
  L<Path::Class>
+ L<File::pushd>
 
 =head1 BUGS
 
