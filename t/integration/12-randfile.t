@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 # 12-randfile.t 
 # Copyright (c) 2006 Rockway <jrockway@cpan.org>
 # Copyright (c) 2006 Al Tobey <tobeya@cpan.org>

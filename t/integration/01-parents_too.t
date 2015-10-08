@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 # 01-parents_too.t 
 # Copyright (c) 2006 Jonathan Rockway <jrockway@cpan.org>
 

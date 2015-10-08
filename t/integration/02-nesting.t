@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 # 02-nesting.t 
 # Copyright (c) 2006 Jonathan Rockway <jrockway@cpan.org>
 

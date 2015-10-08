@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 # 09-clone_object.t 
 # Copyright (c) 2006 Al Tobey           <tobeya@cpan.org>
 #                and Jonathan Rockway <jrockway@cpan.org>

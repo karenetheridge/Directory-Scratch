@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 # append.t 
 # Copyright (c) 2006 Jonathan Rockway <jrockway@cpan.org>
 use Test::More tests => 6;

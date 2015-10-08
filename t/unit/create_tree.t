@@ -1,4 +1,3 @@
-#!/usr/bin/perl
 # create_tree.t 
 # Copyright (c) 2007 Jonathan Rockway <jrockway@cpan.org>
 
