@@ -15,7 +15,7 @@ use File::stat (); # no imports
 my ($OUR_PLATFORM) = $File::Spec::ISA[0] =~ /::(\w+)$/;
 my $PLATFORM = 'Unix';
 use Scalar::Util qw(blessed);
-use namespace::clean;
+use namespace::clean 0.19;
 
 use overload q{""} => \&base,
   fallback => "yes, fallback";
