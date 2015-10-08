@@ -4,6 +4,9 @@ package Directory::Scratch;
 
 use warnings;
 use strict;
+
+our $VERSION = '0.19';
+
 use Carp;
 use File::Temp;
 use File::Copy;
